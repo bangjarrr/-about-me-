@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About || Alfajjar</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png" />
+
     <!-- Css default -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -11,17 +13,21 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Link Animasi saat di scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <!-- Navbar Selesai -->
 
     <nav class="navbar">
-      <div class="navbar-brand">
+      <div class="navbar-brand" data-aos="fade-right" data-aos-duration="2000">
         <img src="./img/profil.jpg" alt="Logo" />
         <h5>Portofolio || Alfajjar</h5>
       </div>
 
-      <div class="menu-icon" id="menu-icon">
+      <div class="menu-icon" id="menu-icon" data-aos="fade-left" data-aos-duration="2000">
         <i data-feather="menu"></i>
       </div>
 
@@ -37,13 +43,13 @@
           <a href="/about-me/">About Me</a>
         </li>
         <li class="list-item">
-          <a href="https://bangjarrr.github.io/#skill">skill & project</a>
+          <a href="/#skill">skill & project</a>
         </li>
         <li class="list-item">
           <a href="/galery/">Galery</a>
         </li>
         <li class="list-item">
-          <a href="https://bangjarrr.github.io/#contact">Contact Me</a>
+          <a href="/#contact">Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -54,25 +60,25 @@
 
     <section class="about" id="about">
       <div class="about-title">
-        <h5>Assalamu'alaikum Wr. Wb.</h5>
+        <h5 data-aos="fade-down" data-aos-duration="2000">Assalamu'alaikum Wr. Wb.</h5>
       </div>
       <div class="about-description">
-        <h1>About Me</h1>
-        <p>
+        <h1 data-aos="fade-up" data-aos-duration="2000">About Me</h1>
+        <p data-aos="fade-right" data-aos-duration="2000">
           Hi, I'm Mochammad Alfajjar, usually called Fajar. I'm from East Java,
           Indonesia 🇮🇩.
         </p>
-        <p>
+        <p data-aos="fade-left" data-aos-duration="2000">
           I am a vocational high school student, majoring in computer and
           network engineering. I have an interest in the world of programming,
           especially web programming
         </p>
-        <p>
+        <p data-aos="fade-right" data-aos-duration="2000">
           I active participate in training, teaching, and learning communities.
           I also managed to get competency certificate.
           <a href="/certificate/">Show my certificate.</a>
         </p>
-        <p>
+        <p data-aos="fade-left" data-aos-duration="2000">
           To get to know me better, you can connect on my
           <a href="https://www.linkedin.com/in/alfajjar-putra-4a2a83290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>, or my <a href="https://t.me/Njir_18">Telegram</a>. You can also
           contact me via this page<a href="/#contact">pages fajar contact</a>.
@@ -84,29 +90,29 @@
 
     <section class="about-detail" id="about-detail">
       <div class="about-detail-title">
-        <h1>About Fajar Pages</h1>
-        <p>
+        <h1 data-aos="fade-up" data-aos-duration="2000">About Fajar Pages</h1>
+        <p data-aos="fade-down" data-aos-duration="2000">
           <a href="/">Fajar Pages</a>
           is a website created in December 2023. I made this website as a
           personal record of what I have done, be it my project or other things.
         </p>
-        <p>
+        <p data-aos="fade-down" data-aos-duration="2000">
           Hopefully this website can be useful for all of you; Hopefully we can
           work together to advance this beloved country through programming or
           other things related to tecnology.
         </p>
-        <p>
+        <p data-aos="fade-down" data-aos-duration="2000">
           I Personally apologize profusely if there are any mistakes, because I
           am also still in the learning stage.
         </p>
-        <p>
+        <p data-aos="fade-down" data-aos-duration="2000">
           If you have questions or want to convey criticism and suggestions, you
           can send a message to
           <a href="https://www.linkedin.com/in/alfajjar-putra-4a2a83290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> or <a href="https://t.me/Njir_18">Telegram</a>.
         </p>
       </div>
       <div class="about-title">
-        <h5>Wassalamu'alaikum Wr. Wb.</h5>
+        <h5 data-aos="fade-up" data-aos-duration="2000">Wassalamu'alaikum Wr. Wb.</h5>
       </div>
     </section>
 
@@ -139,6 +145,11 @@
     <!-- Feather Icon -->
     <script>
       feather.replace();
+    </script>
+
+     <!-- AOS -->
+     <script>
+      AOS.init();
     </script>
   </body>
 </html>
