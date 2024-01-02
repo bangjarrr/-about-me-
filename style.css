@@ -121,12 +121,12 @@ body {
     .about, .about-detail {
         justify-content: center;
         align-items: center;
-        margin: 40px;
+        margin: 0px 40px;
+        margin-top: 15vh;
     }
 
     .about
     .about-title {
-        margin-top: 15vh;
         color: var(--bg);
         background: var(--hover);
         padding: 10px 0px;
@@ -282,3 +282,48 @@ body {
 }
 
 /* About finish */
+
+
+.navbar-dark {
+    background: rgb(15,15,15,0.8);
+}
+
+.navbar-light {
+    background: rgba(83, 75, 75, 0.8);
+}
+
+.about
+.home-brand {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    justify-content: start;
+}
+
+.about
+.home-brand img, h4 {
+    display: block;
+    margin: 0px 10px;
+}
+
+#darkMode,
+#lightMode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark Theme */
+* .dark-theme {
+    background: var(--grey);
+    color: #fff;
+}
+
+/* Light Theme */
+* .light-theme { 
+    background: #979090;
+    color: #000;
+}
